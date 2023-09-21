@@ -8,9 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- Navbar For Mobile -->
+    <!--------------------- Navbar For Mobile ------------------>
     <nav class="bg-black h-10 flex md:hidden justify-between">
-      <!-- Menu Button for Smaller Device-->
+      <!------------------------- left side  bar----------------------->
 
       <div class="flex items-center gap-2">
         <div>
@@ -32,6 +32,7 @@
           </button>
         </div>
       </div>
+      <!--------------------- Right Side Bar ------------------->
       <div class="flex items-center gap-2">
         <div><h1 class="text-white">Sidebar</h1></div>
         <div>
@@ -51,7 +52,7 @@
         </div>
       </div>
     </nav>
-    <!-- navbar for desktop -->
+    <!------------------------- navbar for desktop ------------------------->
     <nav class="">
       <ul
         class="md:flex hidden justify-around bg-black text-white py-4 px-10 text-xl"
@@ -62,7 +63,7 @@
         <li>Contact</li>
       </ul>
     </nav>
-    <!-- left Side Bar -->
+    <!----------------------------- left Side Body -------------------------->
     <div class="flex flex-row">
       <div class="basis-1/4 bg-[#9398BF] h-[486px] hidden md:flex">
         <div class="flex flex-col">
@@ -94,7 +95,7 @@
           </div>
         </div>
       </div>
-      <!-- Right Side Content -->
+      <!-------------------------- Right Side Body -------------------------->
       <div class="basis-3/4 text-center mx-auto">
         <div>
           <h1 class="font-bold text-3xl mt-4">Main Content</h1>
@@ -125,6 +126,7 @@
         </div>
       </div>
     </div>
+    <!-- Close button for left sidebar -->
     <div id="sidebar-s" class="sidebar-s">
       <div class="flex justify-end">
         <button class="close-sidebar-s-button p-3">
@@ -144,6 +146,7 @@
           </svg>
         </button>
       </div>
+      <!-- ---------------left Sidebar menu for small device ---------------------->
       <div
         class="bg-gray-500 h-[670px] flex md:hidden text-white py-4 px-10 text-xl"
       >
@@ -175,6 +178,7 @@
           </svg>
         </button>
       </div>
+      <!--------------------- Right Sidebar menu for small device ------------------->
       <div
         class="bg-gray-500 h-[670px] flex flex-col md:hidden text-white py-4 px-10 text-xl"
       >
@@ -206,6 +210,7 @@
         </div>
       </div>
     </div>
+    <!--------------------- JS - -------------------->
     <script src="/JS/Home.js"></script>
   </body>
 </html>
