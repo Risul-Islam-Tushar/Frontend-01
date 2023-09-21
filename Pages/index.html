@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend-01</title>
+    <link rel="stylesheet" href="/CSS/Home.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Navbar For Mobile -->
+    <nav class="bg-black h-10 flex md:hidden justify-between">
+      <!-- Menu Button for Smaller Device-->
+
+      <div class="flex items-center gap-2">
+        <div>
+          <h1 class="text-white">Menu</h1>
+        </div>
+        <div>
+          <button
+            class="bg-slate-600 open-left-sidebar-s-button p-3 lg:hidden block"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <div><h1 class="text-white">Sidebar</h1></div>
+        <div>
+          <button
+            class="bg-slate-600 open-right-sidebar-s-button p-3 lg:hidden block"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar for desktop -->
+    <nav class="">
+      <ul
+        class="md:flex hidden justify-around bg-black text-white py-4 px-10 text-xl"
+      >
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <!-- left Side Bar -->
+    <div class="flex flex-row">
+      <div class="basis-1/4 bg-[#9398BF] h-[486px] hidden md:flex">
+        <div class="flex flex-col">
+          <div class="p-4">
+            <h1 class="font-bold text-lg">Sidebar:</h1>
+          </div>
+          <div class="flex flex-col gap-10 ps-4 pr-4">
+            <div class="custom-select">
+              <select id="mySelect">
+                <option selected class="selected-option">Item 1</option>
+                <option class="option-item" value="option2">Item A</option>
+                <option class="option-item" value="option3">Item-B</option>
+              </select>
+            </div>
+            <div class="custom-select">
+              <select id="mySelect">
+                <option selected class="selected-option">Item 2</option>
+                <option class="option-item" value="option2">Item A</option>
+                <option class="option-item" value="option3">Item-B</option>
+              </select>
+            </div>
+            <div class="custom-select">
+              <select id="mySelect">
+                <option selected class="selected-option">Item 3</option>
+                <option class="option-item" value="option2">Item A</option>
+                <option class="option-item" value="option3">Item-B</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Side Content -->
+      <div class="basis-3/4 text-center mx-auto">
+        <div>
+          <h1 class="font-bold text-3xl mt-4">Main Content</h1>
+        </div>
+        <div class="text-justify text-base">
+          <p>
+            My country's name is Bangladesh. Bangladesh is a very small country
+            huge population. It is a medium-developed country in South Asia. We
+            have a very good and progressing economy. It has an area of 147,570
+            square kilometers. But it has a population of 164 million. That is
+            huge than the ares.
+          </p>
+          <p>
+            But it has a population of 164 million. That is huge than the
+            ares.But it is still a very beautiful and peaceful country. People
+            of Bangladesh are so friendly with each other. This country has a
+            glorious history of independence. We got independence from Pakistan
+            in 1971 after nine mothers blood-shedding war. More than 3 million
+            Bangladeshi sacrificed their life in that genocide.
+          </p>
+          <p>
+            But still, we were able to get our independence. After independence,
+            the newly born country faced lots of hard times and struggles. But
+            it rises very well. Now Bangladesh is one of the best countries to
+            live in South Asia. There are so many beautiful spots to see in this
+            country
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar-s" class="sidebar-s">
+      <div class="flex justify-end">
+        <button class="close-sidebar-s-button p-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="2em"
+            viewBox="0 0 512 512"
+          >
+            <style>
+              svg {
+                fill: #ffffff;
+              }
+            </style>
+            <path
+              d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="bg-gray-500 h-[670px] flex md:hidden text-white py-4 px-10 text-xl"
+      >
+        <ul class="items-center ps-20">
+          <li class="py-6">Home</li>
+          <li class="py-6">About</li>
+          <li class="py-6">Blog</li>
+          <li class="py-6">Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="sidebar-r" class="sidebar-r">
+      <div class="flex justify-end">
+        <button class="close-right-sidebar-s-button p-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="2em"
+            viewBox="0 0 512 512"
+          >
+            <style>
+              svg {
+                fill: #ffffff;
+              }
+            </style>
+            <path
+              d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="bg-gray-500 h-[670px] flex flex-col md:hidden text-white py-4 px-10 text-xl"
+      >
+        <div>
+          <h1 class="text-black pb-8 text-2xl font-bold">SideBar:</h1>
+        </div>
+        <div class="flex flex-col gap-10 text-black">
+          <div class="custom-select-s">
+            <select id="mySelect">
+              <option selected class="selected-option">Item 1</option>
+              <option class="option-item" value="option2">Item A</option>
+              <option class="option-item" value="option3">Item-B</option>
+            </select>
+          </div>
+          <div class="custom-select-s">
+            <select id="mySelect">
+              <option selected class="selected-option">Item 2</option>
+              <option class="option-item" value="option2">Item A</option>
+              <option class="option-item" value="option3">Item-B</option>
+            </select>
+          </div>
+          <div class="custom-select-s">
+            <select id="mySelect">
+              <option selected class="selected-option">Item 3</option>
+              <option class="option-item" value="option2">Item A</option>
+              <option class="option-item" value="option3">Item-B</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/JS/Home.js"></script>
+  </body>
+</html>
